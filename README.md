@@ -1,1 +1,2 @@
 # E-Commerce-Website
+This website is all about creating a Front-End of an e-commerce website. In this front-end you are able to add products to your website. Add products to your cart. There is also a creation of a login page, in which once you registered you will not be able to register second time, you have to login with your credentials. This login credentials is saved via php in mysql in a hashed form.
