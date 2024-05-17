@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        .first
+        {
+            position: absolute;
+             /* by changing position absolute second and third element is not following first element only welcocme comes downward and when we use position absolute we do not use margin */
+             /* when item is absolute it will not occupy space for it. that is absoulte property. without position absolute every element is static and taking its own space but here welcome does not have a true space it is trying to coexist with the second element*/
+
+
+             background-color: aqua;
+             /* margin-top: 100px; */
+             /* if you apply margin top to third element only third element will be affected but if we change 
+             .third to .second then second and third element will be affected and if we again change the .second element to .first then all first, second, and third element will be affected. this is beacuse of static positioning  */
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- static
+    relative
+    absolute
+    fixed
+    sticky -->
+
+    <div class="first">
+        Welcome
+    </div>
+
+    <div class="second">
+        To the
+    </div>
+
+    <div class="third">
+        World of GOO
+    </div>
+
+</body>
+</html>

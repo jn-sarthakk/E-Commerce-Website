@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <style>
+        .box:nth-child(1)
+        {
+            background-color: red;
+        }
+        .box:nth-child(2)
+        {
+            background-color: violet;
+            align-self: stretch;
+        }
+        .box:nth-child(3)
+        {
+            background-color: aqua;
+        }
+        .box:nth-child(4)
+        {
+            background-color: brown;
+        }
+        .box:nth-child(5)
+        {
+            background-color: blue;
+            align-self: flex-end;
+            /* align self is used to to align a particular element to some position */
+
+        }
+
+        /* Generally we apply colours as odd and even so it saves time by writing the same code and 12345 again and again. here it goes: */
+        /* .box:nth-child(odd)
+        {
+            background-color: cadetblue;
+        }
+        .box:nth-child(even)
+        {
+            background-color: burlywood;
+        } */
+        .box
+        {
+            padding: 20px;
+            
+            /* width: 80px; */
+            /* width will also not work in stretch beacuse of individual item so to enlarge items we will give padding */
+
+            /* height: 80px; */
+            /* it will not work in stretch because we have given the individual heighgt for box 80px and if we remove the individual height it will stretch */
+        }
+        .container
+        {
+            display: flex;
+            flex-direction: column;
+            /* flex-direction types are row, column, row-reverse, column-reverse, etc */
+
+            background-color: rgb(232, 185, 124);
+            height: 400px;
+            
+            align-items: center;
+            /* types of align-items are stretch, end, start, center */
+            /* align-items is for cross axis means vertical and it is for flex-direction column and column-reverse */
+            /* it will not work unless there is a height. after setting the height property it will work */
+
+
+            /* justify-content: center; */
+            /* justify-content have different options like space-between, space-evenly, end, left, right, safe, felx-start, flex-end, start etc.
+            Justify content is only for main axis that is only for horizontal that is flex-direction on for row and row-reverse*/
+
+            justify-content: space-evenly;
+        }
+    </style>
+
+</head>
+<body>
+   
+    <div class="container">
+        <div class="box">
+            1
+        </div>
+
+        <div class="box">
+            2
+        </div>
+
+        <div class="box">
+            3
+        </div>
+
+        <div class="box">
+            4
+        </div>
+
+        <div class="box">
+            5
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- here in this code all the alignment is applied to the parent class i.e to conatiner class. we have given the gap to the parent class and it will automatically applied to the child classes. -->
+
+<!-- instead of writing css to individual element (div block) we can grab into the one element (parent) we can assign all alignment to parent -->

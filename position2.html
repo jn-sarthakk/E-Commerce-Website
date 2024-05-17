@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        /* *
+        this is called universal selector. it is applied to all the elements.
+        {
+            margin: 0;
+            padding: 0;
+        } */
+        .abs
+        {
+            position: absolute;
+            /* absolute element can be placed anywhere on the screen */
+
+            top: 50%;
+            left: 50%;
+            color: whitesmoke;
+            padding: 20px;
+            background-color: brown;
+            transform: translate(-50%,-50%);
+            /* transform is used to aligning the element to the center as from top 50% and left50% does not align button fully to the center */
+            z-index: 2;
+            /* z-index is used to prioritize and overlapping scenerio between elements */
+        }
+        .abs:hover
+        /* this is hovering property of CSS */
+        {
+            /* background-color: aquamarine; */
+             z-index: 4;
+             /* zoom: 1.1; */
+            /*top: 100px; */
+        }
+        .abs2
+        {
+            position: absolute;
+            padding: 20px;
+            background-color: chartreuse;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 3;
+            transition: all 1s;
+        }
+        .abs2:hover
+        {
+            transform: translate(50%,-50%);
+            left: 55%;
+            transition: all 1s;
+            /* transition is used for smooth scrolling */
+        }
+    </style>
+</head>
+<body>
+
+    
+    <button class="abs2">Freedom250</button>
+    <button class="abs">iam free bird</button>
+
+ 
+</body>
+</html>

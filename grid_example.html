@@ -1,0 +1,54 @@
+<!-- CSS grid is used when you have a exact layout irrespective of the scrren size in sir's opinion. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <style>
+        .container
+        {
+            display: grid;
+            /* grid-template-columns: 100px 150px 100px; */
+            /* it is for manually grrid */
+
+            grid-template-columns: auto auto auto;
+            /* it is for automatic space and when we write 3 times auto means 3 columns and when we write auto 2 times means 2 columns in row */
+
+            /* grid-gap: 10px; */
+            grid-column-gap: 30px;
+            grid-row-gap: 10px;
+        }
+        .item:nth-child(odd)
+        {
+            background-color: orange;
+        }
+        .item:nth-child(even)
+        {
+            background-color: grey;
+        }
+        .item:nth-child(1)
+        {
+            grid-column: 1/span 2;
+            /* it is used for items which have to contain 2 columns and if item hs to contain 3 columns then we write 1/span 3; instead of 2 */
+        }
+        /* .item
+        {
+            background-color: grey;
+        } */
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!-- flex gives us the option of all possible option and to align elements.
+basically dislay flex aligns the child element in different settings like both in horizontal and vertical. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <style>
+        .box
+        {
+            width: 80px;
+            height: 80px;
+            background-color: aquamarine;
+            margin: 10px;
+            /* this is used to seperate boxes as without this margin top it will show like a rectangle */
+            display: inline-block;
+            /* border-radius: 10px; */
+        }
+        .box:nth-child(1)
+        /* this is used to change colours of boxes and we have write it every time when we have to change color */
+        {
+            background-color: orangered;
+        }
+        .box:nth-child(2)
+        {
+            background-color: violet;
+        }
+        .box:nth-child(3)
+        {
+            background-color: aqua;
+        }
+        .box:nth-child(4)
+        {
+            background-color: brown;
+        }
+        .box:nth-child(5)
+        {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+        <div class="box">
+            1
+        </div>
+
+        <div class="box">
+            2
+        </div>
+
+        <div class="box">
+            3
+        </div>
+
+        <div class="box">
+            4
+        </div>
+    
+        <div class="box">
+            5
+        </div>
+
+</body>
+</html>
+
+<!-- here in this code all the alignment is applied to the child element. we have to individually give the margin. -->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <style>
+        .first
+        {
+            position: absolute;
+            /* 1. moving the absolute element will not affect any element on the screen.
+            2. it will try to coexist with the other element */
+            top: 100px;
+            left: 200px;
+            /* in this absolute element it will move freely anywhere on the screen, by default its values are 0,0. */
+
+            width: 50%;
+            background-color:coral;
+            
+        }
+        .second
+        {
+            width: 100%;
+            background-color: brown;
+        }
+      
+    </style>
+
+</head>
+<body>
+    
+    <div class="first">
+        First 
+    </div>
+
+    <div class="second">
+        second
+    </div>
+
+    <div class="third">
+        third
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .card
+        {
+            width: 200px;
+            height: fit-content;
+            /* we can also give "fit-content" which will automatically adjust height according to the items. so using fit-content we will not give height like 300px/400px */
+
+            background-color: rgb(46,125,5);
+            margin: 50px;
+            border-radius: 13px;
+
+        }
+        .title
+        {
+            text-align: center;
+            background-color: rgb(87, 84, 84);
+            color: white;
+            padding: 8px;
+            border-top-left-radius: 13px;
+            border-top-right-radius: 13px;
+            font-family: calibri;
+            font-size: 21px;
+        }
+        img
+        {
+            width: 100%;
+            border-radius: 50%;
+        }
+        input
+        {
+            width: 55%;
+        }
+        .qty-parent
+        {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .qty-parent button
+        {
+            background-color: transparent;
+            border: none;
+            font-size: 20px;
+        }
+        .add-btn
+        {
+            color: greenyellow;
+        }
+        .sub-btn
+        {
+            color: tomato;
+        }
+        .cart-parent
+        {
+            margin-top: 8px;
+            text-align: center;
+        }
+        .cart-parent button
+        {
+            background-color: yellow;
+            border-radius: 8px;
+            width: 50%;
+            padding: 6px;
+            font-size: 15px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="card">
+        <h3 class="title">Black Formal</h3>
+        <img src="shoe.jpg">
+
+        <div class="qty-parent">
+            <button class="add-btn">+</button>
+            <input type="text">
+            <button class="sub-btn">-</button>
+        </div>
+
+        <div class="cart-parent">
+            <button> Add to Cart</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

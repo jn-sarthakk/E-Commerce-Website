@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .parent
+        {
+            width: 80%;
+            /* width can be in inches, centimetres, points, pixels, millimitre, percentage(means 100% of the parent means it will apply to div but the parent is body that is 100% of the body) */
+
+            background-color: blueviolet;
+            height: 100px;
+        }
+        .child
+        {
+            width: 70%;
+            /* it will take 50% of the parent and here parent is parent. suppose parent width is 80% and child width is 100% it will be visible as same in output because child is taking 100% of the parent. */
+
+            background-color: red;
+            height: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="parent">
+        <div class="child">
+            -
+        </div>
+    </div>
+
+</body>
+</html>
